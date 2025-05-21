@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Los Angeles Fire Department - Hall of Fame</title>
+  <link rel="icon" href="https://www.lafd.org/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .read-more-content {
+      display: none;
+      margin-top: 0.5em;
+    }
+    .read-more-btn {
+      display: inline-block;
+      margin-top: 0.5em;
+      padding: 0.3em 0.6em;
+      background-color: #c62828;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .read-more-btn:hover {
+      background-color: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="/" class="logo-link" aria-label="Los Angeles Fire Department Home">
+        <img src="LAFd Logo.png" alt="LA Fire Department Logo" class="logo" />
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="recruitment.html" class="nav-link">Recruitment</a></li>
+          <li><a href="hall-of-fame.html" class="nav-link">Hall of Fame</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-banner" role="banner">
+      <img src="Banner2.png" alt="Firefighters in action" class="hero-image" />
+      <div class="hero-text">
+        <h1>Hall of Fame</h1>
+        <p>Honoring the bravery and dedication of our firefighters throughout history.</p>
+      </div>
+    </section>
+
+    <main class="container">
+      <section>
+        <!-- Agent -->
+        <article class="hall-of-fame-entry">
+          <h2>Agent</h2>
+          <p>Chief Agent a True Legend. Brought LAFD From the Ground. </p>
+          <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+          <div class="read-more-content">
+            <p>Agent, otherwise known as theroblox_agent, is one of the best people in the LAFD’s history. He was a great Fire Chief and a friend. He retired from his position as the LAFD Chief not long after OPGobnik joined LAFD. He was truly a legend that will never be forgotten.</p>
+          </div>
+        </article>
+
+        <!-- Lanman -->
+        <article class="hall-of-fame-entry">
+          <h2>Lanman</h2>
+          <p>Respected for foundational leadership and development of the LAFD after the 2024 revamp.</p>
+          <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+          <div class="read-more-content">
+            <p>Lanman, otherwise known as planepilot1000, was the first Fire Chief of LAFD after the 2024 revamp. He was one of the most productive and successful people in LAFD’s history. He retired shortly after OPGobnik became Fire Chief. As of January 5th, 2025, he is retired from his duties as the Chief Deputy of LAFD.</p>
+          </div>
+        </article>
+
+        <!-- Toasty -->
+        <article class="hall-of-fame-entry">
+          <h2>Toasty</h2>
+          <p>Chief Deputy known for compassion and effectiveness.</p>
+          <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+          <div class="read-more-content">
+            <p>Toasty, otherwise known as Toastybreadroll or UN, was the best Chief Deputy LAFD has had since the 2024 revamp. She was productive, friendly, and amazing. She retired before 2025. As of January 5th, 2025, she is retired from her duties as Chief Deputy.</p>
+          </div>
+        </article>
+
+        <!-- Alicia -->
+        <article class="hall-of-fame-entry">
+          <h2>Alicia</h2>
+          <p>Celebrated for her leadership and kindness during 2025.</p>
+          <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+          <div class="read-more-content">
+            <p>Alicia, otherwise known as Unicorn_spy107, was one of the best Fire Chiefs in 2025. She was productive, kind, and successful. She retired on April 16th, 2025, from her duties as Fire Chief.</p>
+          </div>
+        </article>
+
+        <!-- OPGobnick -->
+        <article class="hall-of-fame-entry">
+          <h2>OPGobnik</h2>
+          <p>Renowned for leadership during departmental revamps and long-term dedication.</p>
+          <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+          <div class="read-more-content">
+            <p>OPGobnik, also known as Gob, was a great Fire Chief and served longer than any other post-revamp. He revamped the department again and was known from USMS too. He worked for over a year in LAFD and was Fire Chief for 8 months. He retired in March 2025 due to inactivity, believing the department deserved better.</p>
+          </div>
+        </article>
+      </section>
+
+      <br>
+      <br>
+      <br>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-social" role="contentinfo" aria-label="Social media links">
+          <a href="https://twitter.com/LAFD" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a>
+          <a href="https://facebook.com/LAFD" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+          <a href="https://instagram.com/LAFD" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleReadMore(button) {
+        const content = button.nextElementSibling;
+        const isVisible = content.style.display === "block";
+        content.style.display = isVisible ? "none" : "block";
+        button.textContent = isVisible ? "Read More" : "Read Less";
+      }
+    </script>
+</body>
+</html>

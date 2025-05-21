@@ -1,140 +1,73 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dern Designs Web Design</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Los Angeles Fire Department - Home</title>
+  <link rel="icon" href="https://www.lafd.org/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans scroll-smooth transition-colors duration-300">
-
-  <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-indigo-700 to-purple-700 text-white text-center px-6">
-    <h1 class="text-6xl font-extrabold mb-6 leading-tight">Dern Designs</h1>
-    <p class="text-2xl max-w-2xl mb-8">Crafting fast, beautiful, and effective websites that grow your brand and convert users into customers.</p>
-    <a href="#packages" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all duration-300">View Packages</a>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-24 bg-gray-100 dark:bg-gray-800 text-center">
-    <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-4xl font-bold mb-6">About Me</h2>
-      <p class="text-lg mb-4">Hello, I am <strong>Finley Moore</strong>. I specialize in designing and developing websites tailored to your needs. 
-      These websites are entirely coded by me ensuring if you have an issue I know whats wrong!
-      I use a variety of tools to craft professional websites, including Visual Studio Code and GitHub.</p>
-      <p class="text-lg">I deliver high-performing sites tailored to each client’s goals.</p>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="py-24 bg-white dark:bg-gray-900 text-center">
-    <h2 class="text-4xl font-bold mb-12">What I Offer</h2>
-    <div class="max-w-6xl mx-auto grid gap-8 px-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-      <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">🔧 Custom Website Design</h3>
-        <p>Branded layouts tailored to your message and industry — not templates.</p>
-      </div>
-      <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">📱 Responsive Development</h3>
-        <p>Optimized for mobile, tablet, and desktop — seamless on every device.</p>
-      </div>
-      <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">💵 Brilliant Prices!</h3>
-        <p>Low Prices to fit your budget! I offer a brillant range of prices!</p>
-      </div>
-      <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">🚀 SEO & Performance</h3>
-        <p>Search-ready and blazing fast — built for rankings and conversions.</p>
-      </div>
-      <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">🔒 Hosting & Maintenance</h3>
-        <p>Worry-free care plans that keep your site updated, secure, and backed up.</p>
-      </div>
-      <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">🎯 UI/UX Consulting</h3>
-        <p>Design strategy sessions to define your goals, user flows, and interface.</p>
-      </div>
-    </div>
-  </section>
-
-<!-- Packages Section -->
-<section id="packages" class="py-24 bg-gray-100 dark:bg-gray-800 text-center">
-    <h2 class="text-4xl font-bold mb-6">Website Packages</h2>
-    <p class="text-lg text-gray-700 dark:text-gray-300 mb-14">Choose a package that matches your vision and scale.</p>
-    <div class="max-w-6xl mx-auto grid gap-8 px-6 grid-cols-1 md:grid-cols-3">
-      
-      <!-- Starter -->
-      <div class="bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow hover:shadow-xl transform transition duration-300 hover:scale-105">
-        <h3 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">Starter</h3>
-        <p class="text-gray-600 dark:text-gray-300 mb-6">For simple projects, landing pages, and portfolios.</p>
-        <ul class="text-left space-y-2 mb-6">
-          <li>✔ 1 Page Design</li>
-          <li>✔ Responsive Layout</li>
-          <li>✔ Basic SEO</li>
-          <li>✔ 1 Revision</li>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="/" class="logo-link" aria-label="Los Angeles Fire Department Home">
+        <img src="LAFd Logo.png" alt="LA Fire Department Logo" class="logo" />
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="recruitment.html" class="nav-link">Recruitment</a></li>
+          <li><a href="hall-of-fame.html" class="nav-link">Hall of Fame</a></li>
         </ul>
-        <p class="text-3xl font-bold mb-4">£99</p>
-        <a href="#contact" class="block w-full bg-indigo-700 text-white py-3 rounded-lg hover:bg-indigo-800 transition">Get Started</a>
-      </div>
-  
-      <!-- Professional (default middle, scaled up) -->
-      <div class="bg-indigo-700 text-white p-8 rounded-2xl shadow-xl transform scale-105 transition duration-300 hover:scale-110">
-        <h3 class="text-2xl font-semibold mb-2">Professional</h3>
-        <p class="mb-6">Best for growing businesses and service-based sites.</p>
-        <ul class="text-left space-y-2 mb-6">
-          <li>✔ Up to 5 Pages</li>
-          <li>✔ CMS Integration</li>
-          <li>✔ Contact Forms</li>
-          <li>✔ 3 Revisions</li>
-        </ul>
-        <p class="text-3xl font-bold mb-4">£399</p>
-        <a href="#contact" class="block w-full bg-white text-indigo-700 font-bold py-3 rounded-lg hover:bg-gray-100 transition">Select</a>
-      </div>
-  
-      <!-- Enterprise -->
-      <div class="bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow hover:shadow-xl transform transition duration-300 hover:scale-105">
-        <h3 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">Enterprise</h3>
-        <p class="text-gray-600 dark:text-gray-300 mb-6">For large-scale, custom builds with full functionality.</p>
-        <ul class="text-left space-y-2 mb-6">
-          <li>✔ Unlimited Pages</li>
-          <li>✔ Advanced SEO + Analytics</li>
-          <li>✔ E-Commerce</li>
-          <li>✔ Priority Support</li>
-        </ul>
-        <p class="text-3xl font-bold mb-4">£800+</p>
-        <a href="#contact" class="block w-full bg-indigo-700 text-white py-3 rounded-lg hover:bg-indigo-800 transition">Contact Me</a>
-      </div>
-      
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
     </div>
-  </section>
-  
+  </header>
 
-<!-- Contact Section -->
-<section id="contact" class="py-24 bg-gray-100 dark:bg-gray-800 flex justify-center items-center">
-    <form class="max-w-xl w-full grid grid-cols-1 gap-6 p-8 bg-white dark:bg-gray-900 rounded-xl shadow-lg" action="https://formsubmit.co/your-email@example.com" method="POST">
-      <h2 class="text-3xl font-bold text-center text-indigo-700 dark:text-indigo-400 mb-6">Contact Me</h2>
-      
-      <input class="border border-gray-300 dark:border-gray-700 p-4 rounded-lg w-full bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" type="text" name="name" placeholder="Your Name" required />
-      
-      <input class="border border-gray-300 dark:border-gray-700 p-4 rounded-lg w-full bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" type="email" name="email" placeholder="Your Email" required />
-      
-      <textarea class="border border-gray-300 dark:border-gray-700 p-4 rounded-lg w-full bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" rows="6" name="message" placeholder="Tell me about your project..." required></textarea>
-      
-      <!-- Hidden field to prevent spam (FormSubmit feature) -->
-      <input type="hidden" name="_next" value="">
-      <input type="hidden" name="_captcha" value="false">
-      
-      <button type="submit" class="bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg w-full hover:bg-indigo-800 transition duration-300">Send Message</button>
-    </form>
-  </section>
-  <section id="contact" class="text-center bg-gray-100 dark:bg-gray-800 py-5">
-    <p> Information may take up to 5 Business Days. If you have not recived an answer please contact us again.</p>
-  </section>
+  <main>
+    <section class="hero-banner" role="banner">
+      <img src="Banner2.png" alt="Firefighters in action" class="hero-image" />
+      <div class="hero-text">
+        <h1>Los Angeles Fire Department</h1>
+        <p>Protecting Life and Property</p>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-8 text-center">
-    <p class="text-sm">&copy; 2025 Dern Designs. All rights reserved.</p>
+    <section class="container" >
+        <h1>About the Los Angeles Fire Department</h1>
+        <p>The Los Angeles Fire Department (LAFD) is committed to protecting lives, property, and the environment through fire prevention, emergency medical services, and disaster response.</p>
+        <p>Established in 1886, the LAFD has grown into one of the largest and most respected fire departments in the United States, staffed by highly trained and dedicated firefighters.</p>
+        <p>Recently Updated in 2025 With an entire Server revamp and increased activity. It makes them stand out!</p>
+    </section>
+
+    <section class="news-section container" aria-label="Latest News">
+      <h2>Latest News</h2>
+      <article class="news-item">
+        <h3><a href="https://discord.com/channels/1201240671399460925/1201280231089127425" class="news-link">Imporant Annoucments</a></h3>
+        <p>To Be Updated on Everything LAFD!</p>
+      </article>
+      <article class="news-item">
+        <h3><a href="https://discord.com/channels/1201240671399460925/1355640478552559687" class="news-link">Question of the day!</a></h3>
+        <p>A Question Every Day for you to express your thoughts!</p>
+      </article>
+      <article class="news-item">
+        <h3><a href="https://discord.com/channels/1201240671399460925/1367567331383050310" class="news-link">Press Release</a></h3>
+        <p>All your News in one place!</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-social" role="contentinfo" aria-label="Social media links">
+        <a href="https://twitter.com/LAFD" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a>
+        <a href="https://facebook.com/LAFD" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+        <a href="https://instagram.com/LAFD" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
   </footer>
 
+  <script src="scripts.js"></script>
 </body>
 </html>

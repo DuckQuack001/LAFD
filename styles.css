@@ -1,0 +1,313 @@
+/* Reset and base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #0071bc;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #003a6d;
+  outline: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.site-header {
+  background-color: #003a6d;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-left: 2rem;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  display: inline-block;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffa500;
+  outline: none;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Hero Banner */
+
+.hero-banner {
+  position: relative;
+  color: white;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  max-width: 400px;
+  background-color: rgba(0, 58, 109, 0.7);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background-color: #ffa500;
+  color: #003a6d;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #cc8400;
+  color: white;
+  outline: none;
+}
+
+/* Alerts Section */
+
+.alerts {
+  background-color: #f8d7da;
+  border-left: 6px solid #d9534f;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+.alerts h2 {
+  margin-top: 0;
+  color: #d9534f;
+  font-weight: 700;
+}
+
+.alerts ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.alerts li {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* News Section */
+
+.news-section {
+  margin-bottom: 4rem;
+}
+
+.news-section h2 {
+  font-weight: 700;
+  border-bottom: 3px solid #003a6d;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.news-item {
+  margin-bottom: 1.5rem;
+}
+
+.news-item h3 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.news-link {
+  color: #003a6d;
+}
+
+.news-link:hover,
+.news-link:focus {
+  color: #ffa500;
+  outline: none;
+}
+
+/* Footer */
+
+.site-footer {
+  background-color: #003a6d;
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-contact,
+.footer-social {
+  flex: 1 1 250px;
+  margin-bottom: 1rem;
+}
+
+.footer-contact h4 {
+  margin-top: 0;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer-contact address {
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.footer-contact a {
+  color: #ffa500;
+}
+
+.footer-social a {
+  margin-right: 1.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  color: #ffa500;
+  outline: none;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav {
+    width: 100%;
+    order: 3;
+    display: none;
+  }
+
+  .main-nav.active {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .nav-list li {
+    margin: 0.5rem 0;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    order: 2;
+  }
+
+  .hero-text {
+    position: static;
+    transform: none;
+    background-color: rgba(0, 58, 109, 0.85);
+    margin: 1rem;
+    border-radius: 8px;
+  }
+
+  .hero-image {
+    height: 250px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-contact,
+  .footer-social {
+    flex: 1 1 100%;
+  }
+}
